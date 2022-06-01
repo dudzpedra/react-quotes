@@ -4,7 +4,7 @@ import Quotes from ".";
 const quote = {
   quote: "test quote",
   author: "test author",
-  date: "test date",
+  date: "13/07/1988",
 };
 
 test("renders received quote, author and date", () => {

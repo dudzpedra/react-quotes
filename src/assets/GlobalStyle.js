@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: #000;
+    background: linear-gradient(to bottom, #000, #000, #000, #111);
     color: #fff;
     font-family: 'Quicksand', sans-serif;
   }

@@ -6,12 +6,16 @@ import RandomButton from "./components/RandomButton";
 function App() {
   return (
     <AppWrapper>
-      <h3>Hello Quotes</h3>
+      <h1>Hello Quotes</h1>
       <ContentWrapper>
-        <Quotes quote='test quote' author='test author' date='test date' />
+        <Quotes
+          quote="I am a father! This is the happiest day of my life!"
+          author="Eduardo Pedra"
+          date="24/05/2019"
+        />
         <HomeImage />
       </ContentWrapper>
-      <RandomButton />
+      <RandomButton>New Quote</RandomButton>
     </AppWrapper>
   );
 }
