@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders the app with an image, a quote and a button", () => {
   render(<App />);
-  const linkElement = screen.getByText(/Hello Quotes/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const buttonElement = screen.getByRole("button");
+  const imageElement = screen.getByRole("img");
+  const textElement = screen.getByRole("contentinfo");
+
+  expect(buttonElement).toBeInTheDocument();
+  expect(imageElement).toBeInTheDocument();
+  expect(textElement).toBeInTheDocument();
 });

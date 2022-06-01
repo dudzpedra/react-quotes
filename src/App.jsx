@@ -1,10 +1,18 @@
-import './App.css';
+import { AppWrapper, ContentWrapper } from "./assets/styles/Wrapper";
+import HomeImage from "./components/HomeImage";
+import Quotes from "./components/Quotes";
+import RandomButton from "./components/RandomButton";
 
 function App() {
   return (
-    <div className="App">
+    <AppWrapper>
       <h3>Hello Quotes</h3>
-    </div>
+      <ContentWrapper>
+        <Quotes quote='test quote' author='test author' date='test date' />
+        <HomeImage />
+      </ContentWrapper>
+      <RandomButton />
+    </AppWrapper>
   );
 }
 
