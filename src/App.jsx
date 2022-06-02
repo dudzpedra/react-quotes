@@ -1,9 +1,16 @@
+import { useEffect } from "react";
 import { AppWrapper, ContentWrapper } from "./assets/styles/Wrapper";
 import HomeImage from "./components/HomeImage";
 import Quotes from "./components/Quotes";
 import RandomButton from "./components/RandomButton";
+import { getQuote } from "./services";
 
 function App() {
+  useEffect(() => {
+    const getData = async () => await getQuote();
+
+    getData();
+  }, []);
   return (
     <AppWrapper>
       <h1>Hello Quotes</h1>
